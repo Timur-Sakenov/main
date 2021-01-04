@@ -1,3 +1,4 @@
+/* 1
 package main
 
 import (
@@ -27,3 +28,18 @@ func main() {
 	err := http.ListenAndServe(":4000", mux)
 	log.Fatal(err)
 }
+*/
+
+/*package main2
+
+import "net/http"
+
+func home(w http.ResponseWriter, r *http.Request){
+	if r.URL.Path != "/"{
+		http.NotFound(w,r)
+		return
+	}
+	w.Write([]byte("Hello from Snippetbox"))
+}
+
+ */
