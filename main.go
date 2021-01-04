@@ -30,7 +30,8 @@ func main() {
 }
 */
 
-/*package main2
+/* 2
+package main2
 
 import "net/http"
 
@@ -43,3 +44,19 @@ func home(w http.ResponseWriter, r *http.Request){
 }
 
  */
+
+/* 3
+package main2
+
+import "net/http"
+
+func createSnippet(w http.ResponseWriter, r *http.Request){
+	if r.Method != http.MethodPost{
+		w.WriteHeader(405)
+		w.Write([]byte("Method Not Allowed"))
+		return
+	}
+
+	w.Write([]byte("Create a new snippet..."))
+}
+*/
