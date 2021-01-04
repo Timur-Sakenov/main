@@ -195,4 +195,18 @@ func main() {
 
  */
 
+/* 9
+
+type Config struct {
+Addr string
+StaticDir string
+}
+
+cfg := new(Config)
+flag.StringVar(&cfg.Addr, "addr", ":4000", "HTTP network address")
+flag.StringVar(&cfg.StaticDir, "static-dir", "./ui/static", "Path to static assets")
+flag.Parse()
+
+ */
+
 
