@@ -135,3 +135,38 @@ func createSnippet(w http.ResponseWriter, r *http.Request){
 }
 
  */
+
+/* 7
+package main2
+
+import (
+	"fmt"
+	"html/template" // New import
+	"log" // New import
+	"net/http"
+	"strconv"
+)
+func home(w http.ResponseWriter, r *http.Request) {
+	if r.URL.Path != "/" {
+		http.NotFound(w, r)
+		return
+	}
+
+	ts, err := template.ParseFiles("./ui/html/home.page.tmpl")
+	if err != nil {
+		log.Println(err.Error())
+		http.Error(w, "Internal Server Error", 500)
+		return
+	}
+
+	err = ts.Execute(w, nil)
+	if err != nil {
+		log.Println(err.Error())
+		http.Error(w, "Internal Server Error", 500)
+	}
+}
+
+*/
+
+
+
